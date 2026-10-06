@@ -180,7 +180,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
 
         {/* Bottom Bar */}
         <div className="mt-12 pt-6 border-t border-emerald-900/80 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-400">
-          <p>{siteSettings.copyrightText}</p>
+          <p>{siteSettings.copyrightText.split('Powered')[0].trim()}</p>
           <div className="flex items-center gap-4 text-slate-400">
             <span>Proprietor: <strong>{siteSettings.bishopName}</strong></span>
             <span>•</span>
